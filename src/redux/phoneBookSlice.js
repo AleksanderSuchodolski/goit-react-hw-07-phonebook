@@ -2,11 +2,12 @@ import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import { delContactThunk, getContactsThunk, postContactThunk } from 'api/api';
 
 const contactInitialState = {
-  contacts: [],
-  isLoading: false,
-  error: null,
+  contacts: {
+    items: [],
+    isLoading: false,
+    error: null,
+  },
 };
-
 const onPending = state => {
   state.isLoading = true;
   state.error = null;
