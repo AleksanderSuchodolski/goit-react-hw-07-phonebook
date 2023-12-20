@@ -45,5 +45,5 @@ export const phoneBookSlice = createSlice({
   },
 });
 
-export const getIsLoading = state => state.phoneBook.isLoading;
-export const getError = state => state.phoneBook.error;
+export const getIsLoading = state => state.contacts.isLoading;
+export const getError = state => state.contacts.error;
